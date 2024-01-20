@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@BoardView.css" type="BorderPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox fx:id="vBoxLeft" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="70.0" BorderPane.alignment="TOP_CENTER">
+         <padding>
+            <Insets left="21.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></VBox>
+   </left>
+   <top>
+      <HBox alignment="CENTER" prefHeight="37.0" prefWidth="1919.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label fx:id="boardInfo" text="Für mehr Infos, die Flächen auf den Wunder anklicken" textAlignment="RIGHT" textFill="WHITE" />
+               </children>
+            </HBox>
+            <ImageView fx:id="imageViewAge" fitHeight="40.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/build1.png" />
+               </image>
+            </ImageView>
+            <MenuButton mnemonicParsing="false" text="Menü">
+              <items>
+                  <MenuItem fx:id="menuButtonShowTip" mnemonicParsing="false" onAction="#showTip" text="Tipp anzeigen" />
+                  <MenuItem fx:id="menuItemShowDiscardStack" mnemonicParsing="false" onAction="#showDiscardStack" text="Ablagestapel anzeigen" />
+                  <MenuItem fx:id="menuButtonRedo" mnemonicParsing="false" onAction="#redo" text="Redo" />
+                  <MenuItem fx:id="menuButtonUndo" mnemonicParsing="false" onAction="#undo" text="Undo" />
+                <MenuItem fx:id="menuButtonSaveGame" mnemonicParsing="false" onAction="#saveGame" text="Speichern" />
+                <MenuItem fx:id="menuButtonCancelGame" mnemonicParsing="false" onAction="#cancelGame" text="Spiel abbrechen" />
+              </items>
+            </MenuButton>
+            <CheckBox fx:id="toggleKIignore" mnemonicParsing="false" onAction="#toggleIngnoreKiTurn" text="Autoconfim Ki-Turn" textFill="WHITE" visible="false" />
+            <HBox fx:id="hBoxMenu" alignment="CENTER" />
+         </children>
+      </HBox>
+   </top>
+   <right>
+      <VBox fx:id="vBoxRight" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="71.0" BorderPane.alignment="TOP_CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets right="21.0" />
+         </padding></VBox>
+   </right>
+   <bottom>
+      <HBox fx:id="hBoxBottom" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="21.0" left="21.0" right="21.0" />
+         </padding></HBox>
+   </bottom>
+</fx:root>

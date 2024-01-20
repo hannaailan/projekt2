@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" stylesheets="@StartView.css" type="AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" layoutX="-5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="imageStartView" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/backgrounds/wallpapper_1920x926_zeus.jpg" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <HBox fx:id="hbox" alignment="TOP_CENTER" prefHeight="154.0" spacing="160.0">
+               <children>
+                  <Button fx:id="buttonNewGame" mnemonicParsing="false" onAction="#newGame" text="Neues Spiel erstellen">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonStartAiTournament" mnemonicParsing="false" onAction="#startAiTournament" text="Ki Turnier erstellen" />
+                  <Button fx:id="buttonContinueGame" disable="true" mnemonicParsing="false" onAction="#continueGame" prefHeight="48.0" prefWidth="183.0" text="Spiel fortsetzen" />
+                  <Button fx:id="buttonLoadGame" mnemonicParsing="false" onAction="#loadGame" prefHeight="48.0" prefWidth="130.0" text="Spiel laden">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonShowHighscores" mnemonicParsing="false" onAction="#showHighscores" prefHeight="48.0" prefWidth="131.0" text="Highscores">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonExit" mnemonicParsing="false" onAction="#exit" text="Beenden" />
+               </children>
+               <padding>
+                  <Insets left="50.0" right="50.0" top="50.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="613.0" layoutY="46.0" text="Herzlich Willkommen!">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</fx:root>

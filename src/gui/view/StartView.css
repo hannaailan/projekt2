@@ -1,0 +1,32 @@
+.button {
+    -fx-font-size: 17px;
+    -fx-background-color: transparent;
+    -fx-border-color:  white;
+    -fx-text-fill: #ad9361;
+    -fx-font-weight: bold;
+    -fx-border-radius: 25;
+    -fx-border-width: 3;
+    /*-fx-background-radius: 3em;*/
+}
+
+.button:hover {
+    -fx-text-fill:black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,1) , 5, 0.0 , 0 , 1 );
+}
+
+
+.label {
+    -fx-font-family: "Courier New";
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,1) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill:black;
+    -fx-font-size: 60px;
+    -fx-padding: 20 20 20 20;
+    
+}
+
+#hbox {
+    -fx-background-color: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,1) , 5, 0.0 , 0 , 1 );
+    -fx-border-color:  #ad9361;
+    -fx-border-width: 4;
+}

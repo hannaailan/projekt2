@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="551.0" style="-fx-background-radius: 35;" stylesheets="@WonderView.css" type="AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets left="10.0" right="10.0" />
+   </padding>
+   <children>
+      <ImageView fx:id="imageWonder" fitHeight="228.0" fitWidth="549.0" layoutY="32.0">
+         <image>
+            <Image url="@../image/backgrounds/board0.jpg" />
+         </image>
+         <effect>
+            <Glow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="brownCards" fitHeight="15.0" fitWidth="40.0" layoutX="79.0" layoutY="175.0" onMouseClicked="#methodeClickBrown">
+         <image>
+            <Image url="@../image/dist.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greyCards" fitHeight="16.0" fitWidth="65.0" layoutX="144.0" layoutY="175.0" onMouseClicked="#methodeClickGrey">
+         <image>
+            <Image url="@../image/dist2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="yellowCards" fitHeight="17.0" fitWidth="101.0" layoutX="229.0" layoutY="175.0" onMouseClicked="#methodeClickYellow">
+         <image>
+            <Image url="@../image/dist3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="violettCards" fitHeight="15.0" fitWidth="40.0" layoutX="438.0" layoutY="175.0" onMouseClicked="#methodeClickViolett">
+         <image>
+            <Image url="@../image/dist4.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="greenCards" fitHeight="16.0" fitWidth="65.0" layoutX="347.0" layoutY="175.0" onMouseClicked="#methodeClickGreen">
+         <image>
+            <Image url="@../image/dist5.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hand" fitHeight="33.0" fitWidth="31.0" layoutX="511.0" layoutY="77.0" onMouseClicked="#methodeHand">
+         <image>
+            <Image url="@../image/hand.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wonderResources" fitHeight="32.0" fitWidth="31.0" layoutX="19.0" layoutY="40.0">
+         <image>
+            <Image url="@../image/minicards/rs1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="conflictPoints" fitHeight="43.0" fitWidth="40.0" layoutX="506.0" layoutY="110.0" onMouseClicked="#methodeConflict">
+         <image>
+            <Image url="@../image/minicards/fight3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mp" fitHeight="33.0" fitWidth="40.0" layoutX="15.0" layoutY="86.0" onMouseClicked="#methodeClickMP">
+         <image>
+            <Image url="@../image/minicards/mp33.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="vp" fitHeight="33.0" fitWidth="40.0" layoutX="15.0" layoutY="134.0" onMouseClicked="#methodeClickVP">
+         <image>
+            <Image url="@../image/minicards/vp33.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coin" fitHeight="43.0" fitWidth="40.0" layoutX="507.0" layoutY="154.0">
+         <image>
+            <Image url="@../image/minicards/geld3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageViewStage1" fitHeight="40.0" fitWidth="144.0" layoutX="36.0" layoutY="260.0" onMouseClicked="#stage1Clicked" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageViewStage2" fitHeight="40.0" fitWidth="144.0" layoutX="200.0" layoutY="260.0" onMouseClicked="#stage2Clicked" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageViewStage3" fitHeight="40.0" fitWidth="144.0" layoutX="362.0" layoutY="260.0" onMouseClicked="#stage3Clicked" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="labelCoins" alignment="CENTER_RIGHT" layoutX="520.0" layoutY="159.0" prefHeight="25.0" prefWidth="13.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageBrick" fitHeight="25.0" fitWidth="25.0" layoutX="54.0" layoutY="4.0">
+         <image>
+            <Image url="@../image/minicards/rs1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelBrick" layoutX="88.0" layoutY="8.0" text="0" />
+      <ImageView fx:id="imageOre" fitHeight="25.0" fitWidth="25.0" layoutX="118.0" layoutY="3.0">
+         <image>
+            <Image url="@../image/minicards/rs2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageStone" fitHeight="25.0" fitWidth="25.0" layoutX="179.0" layoutY="3.0">
+         <image>
+            <Image url="@../image/minicards/rs3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageWood" fitHeight="25.0" fitWidth="25.0" layoutX="241.0" layoutY="3.0">
+         <image>
+            <Image url="@../image/minicards/rs4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageTextil" fitHeight="25.0" fitWidth="25.0" layoutX="291.0" layoutY="3.0">
+         <image>
+            <Image url="@../image/minicards/rs5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageGlass" fitHeight="25.0" fitWidth="25.0" layoutX="341.0" layoutY="3.0">
+         <image>
+            <Image url="@../image/minicards/rs6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imagePapyrus" fitHeight="25.0" fitWidth="25.0" layoutX="391.0" layoutY="3.0">
+         <image>
+            <Image url="@../image/minicards/rs7.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelOre" layoutX="153.0" layoutY="7.0" text="0" />
+      <Label fx:id="labelStone" layoutX="221.0" layoutY="8.0" text="0" />
+      <Label fx:id="labelWood" layoutX="271.0" layoutY="8.0" text="0" />
+      <Label fx:id="labelTextil" layoutX="321.0" layoutY="8.0" text="0" />
+      <Label fx:id="labelGlass" layoutX="371.0" layoutY="8.0" text="0" />
+      <Label fx:id="labelPapyrus" layoutX="421.0" layoutY="8.0" text="0" />
+      <Label fx:id="labelPlayerName" layoutX="58.0" layoutY="44.0" prefHeight="25.0" prefWidth="417.0" text="Label" />
+      <Label fx:id="labelConflict" alignment="CENTER_RIGHT" layoutX="520.0" layoutY="121.0" prefHeight="17.0" prefWidth="13.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelOr" layoutX="489.0" layoutY="3.0" onMouseClicked="#methodOr" prefHeight="25.0" prefWidth="64.0" text="-&gt;OrRes" />
+      <ImageView fx:id="imageOrWB" fitHeight="25.0" fitWidth="50.0" layoutX="41.0" layoutY="3.0" visible="false">
+         <image>
+            <Image url="@../image/minicards/rs8.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageOrSB" fitHeight="25.0" fitWidth="50.0" layoutX="266.0" layoutY="3.0" visible="false">
+         <image>
+            <Image url="@../image/minicards/rs9.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageOrBO" fitHeight="25.0" fitWidth="50.0" layoutX="416.0" layoutY="3.0" visible="false">
+         <image>
+            <Image url="@../image/minicards/rs10.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageOrSW" fitHeight="25.0" fitWidth="50.0" layoutX="116.0" layoutY="3.0" visible="false">
+         <image>
+            <Image url="@../image/minicards/rs11.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageOrWO" fitHeight="25.0" fitWidth="50.0" layoutX="341.0" layoutY="3.0" visible="false">
+         <image>
+            <Image url="@../image/minicards/rs12.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageOrSO" fitHeight="25.0" fitWidth="50.0" layoutX="191.0" layoutY="3.0" visible="false">
+         <image>
+            <Image url="@../image/minicards/rs13.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelOrWB" layoutX="96.0" layoutY="7.0" text="0" visible="false" />
+      <Label fx:id="labelOrSW" layoutX="171.0" layoutY="7.0" text="0" visible="false" />
+      <Label fx:id="labelOrSO" layoutX="246.0" layoutY="7.0" text="0" visible="false" />
+      <Label fx:id="labelOrSB" layoutX="321.0" layoutY="7.0" text="0" visible="false" />
+      <Label fx:id="labelOrWO" layoutX="396.0" layoutY="7.0" text="0" visible="false" />
+      <Label fx:id="labelOrBO" layoutX="471.0" layoutY="7.0" text="0" visible="false" />
+      <ImageView fx:id="allBrown" fitHeight="25.0" fitWidth="81.0" layoutX="239.0" layoutY="141.0" visible="false">
+         <image>
+            <Image url="@../image/card/caravanserzMini.png" />
+         </image></ImageView>
+      <ImageView fx:id="allRest" fitHeight="25.0" fitWidth="64.0" layoutX="248.0" layoutY="107.0" visible="false">
+         <image>
+            <Image url="@../image/card/forumMini.png" />
+         </image></ImageView>
+      <ListView fx:id="liste" layoutX="145.0" layoutY="-23.0" orientation="HORIZONTAL" prefHeight="170.0" prefWidth="310.0" visible="false" />
+      <ImageView fx:id="cardUno" fitHeight="25.0" fitWidth="25.0" layoutX="477.0" layoutY="81.0" onMouseClicked="#methodeUno">
+         <image>
+            <Image url="@../image/karte.png" />
+         </image>
+      </ImageView>
+   </children>
+</fx:root>

@@ -1,0 +1,172 @@
+
+#wonderResources {
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 10, 0, 0, 0);
+
+}
+
+#mp {
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 10, 0, 0, 0);
+	-fx-background-radius: 21;
+}
+
+#vp {
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 10, 0, 0, 0);
+	-fx-background-radius: 21;
+}
+
+#brownCards {
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 10, 0, 0, 0);
+	-fx-background-radius: 21;
+}
+
+#greyCards {
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 10, 0, 0, 0);
+	-fx-background-radius: 21;
+}
+
+#yellowCards {
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 10, 0, 0, 0);
+	-fx-background-radius: 21;
+}
+
+#greenCards {
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 10, 0, 0, 0);
+	-fx-background-radius: 21;
+}
+
+#violettCards {
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 10, 0, 0, 0);
+	-fx-background-radius: 21;
+}
+
+#coin {
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 10, 0, 0, 0);
+}
+
+#conflictPoints {
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 10, 0, 0, 0);
+}
+
+#hand {
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 10, 0, 0, 0);
+}
+
+#labelPlayerName {
+    	-fx-background-color: transparent;
+	-fx-font-weight: bold;
+	-fx-text-fill: gold;
+  	-fx-font-size: 18px;
+   	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,1) , 5, 0.0 , 0 , 1 );
+    	-fx-font-family: "Courier New";
+}
+
+#labelCoins {
+    	-fx-background-color: transparent;
+	-fx-font-weight: bold;
+	-fx-text-fill: white;
+  	-fx-font-size: 14px;
+   	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,1) , 5, 0.0 , 0 , 1 );
+    	-fx-font-family: "Courier New";
+}
+#labelConflictPoints {
+	-fx-font-weight: bold;
+	-fx-text-fil: black;
+}
+
+
+#labelBrick {
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+	
+}#labelOre {
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+	
+}
+#labelStone {
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+	
+}
+#labelGlass {
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+	
+}
+#labelPapyrus {
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+	
+}
+#labelWood {
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+	
+}
+#labelBrick {
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+	
+}
+#labelTextil {
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+	
+}
+
+#labelConflict {
+	-fx-font-weight: bold;
+	-fx-text-fill: white;
+  	-fx-font-size: 14px;
+   	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,1) , 5, 0.0 , 0 , 1 );
+    	-fx-font-family: "Courier New";
+}
+#labelOr {
+    	-fx-background-color: transparent;
+    	-fx-font-family: "Courier New";
+	-fx-text-fill: white;
+
+}
+
+#labelOrBO {
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+	
+}#labelOrWO {
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+	
+}#labelOrSB {
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+	
+}#labelOrWB {
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+	
+}#labelOrSO {
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+	
+}#labelOrSW {
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+	
+}
+.list-view {
+	-fx-background-color: rgba(0,0,0,0.25);
+
+	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,1) , 5, 0.0 , 0 , 1 );
+    	-fx-background-radius: 30;	
+}
+.list-cell {
+	-fx-background-color: rgba(0,0,0,0.25);
+    	-fx-background-radius: 21;
+}
+
+.list-view .scroll-bar:horizontal .increment-arrow,
+.list-view .scroll-bar:horizontal .decrement-arrow,
+.list-view .scroll-bar:horizontal .increment-button,
+.list-view .scroll-bar:horizontal .decrement-button {
+    -fx-padding:0;
+}
